@@ -1,0 +1,1 @@
+with t as (select distinct isbn_no from book_issue, book_copies where book_issue.accession_no = book_copies.accession_no and doi = '2021-08-11') select count(*) from t

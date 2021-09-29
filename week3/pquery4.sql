@@ -1,0 +1,1 @@
+select faculty_fname,faculty_lname from faculty where id not in (select faculty.id from book_issue, members, faculty where book_issue.member_no = members.member_no and faculty.id = members.id)

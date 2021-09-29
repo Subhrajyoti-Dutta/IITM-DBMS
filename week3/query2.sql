@@ -1,0 +1,1 @@
+with t as (select players.name,players.dob from teams,players where teams.team_id = players.team_id and teams.name = 'All Stars') select name from t where dob = (select max(dob) from t)

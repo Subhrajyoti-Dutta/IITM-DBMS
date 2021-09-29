@@ -1,0 +1,5 @@
+select match_num from matches where host_team_score > guest_team_score;
+select name as "Team Name", jersey_home_color as "Home Jersey Color", jersey_away_color as "Away Jersey Color" from teams where name = 'All Stars';
+select p.name as "Player Name" from players p,teams t where p.team_id = t.team_id and t.name = 'All Stars';
+select student_fname, student_lname from students where department_code = 'MCA' and dob > '2002-06-15';
+select * from faculty where department_code = 'CS';

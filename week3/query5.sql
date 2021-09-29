@@ -1,0 +1,1 @@
+with t1 as (select isbn_no,count(isbn_no) from book_copies group by isbn_no), t2 as (select * from book_catalogue) select title, count from t1, t2 where t1.isbn_no = t2.isbn_no and title like '%Database%'

@@ -1,0 +1,1 @@
+select student_fname, student_lname from members, students where members.roll_no = students.roll_no and member_no in (select distinct(member_no) from book_issue)

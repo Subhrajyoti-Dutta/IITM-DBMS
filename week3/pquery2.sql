@@ -1,0 +1,1 @@
+select distinct faculty_fname, faculty_lname from book_issue, members, faculty where book_issue.member_no = members.member_no and faculty.id = members.id and department_code = 'ME'
